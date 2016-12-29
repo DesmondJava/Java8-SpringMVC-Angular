@@ -21,7 +21,7 @@
     <link href="${fontawesome}" rel="stylesheet" />
 
     <!-- jQuery -->
-    <spring:url value="/resources/js/jquery.js" var="jqueryjs"/>
+    <spring:url value="/resources/js/jquery-2.1.4.min.js" var="jqueryjs"/>
     <script src="${jqueryjs}"></script>
 
     <!-- Bootstrap Core JavaScript -->
@@ -30,6 +30,12 @@
 </head>
 
 <body>
+
+<c:url value="/file.html" var="file"/>
+<c:url value="/jdbc.html" var="jdbc"/>
+<c:url value="/email.html" var="email" />
+<c:url value="/rest.html" var="rest" />
+<c:url value="/orm.html" var="orm" />
 
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -52,17 +58,20 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorial<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <c:url value="/file.html" var="file"/>
                         <li>
                             <a href="${file}">Загрузка файла PDF и Excel</a>
                         </li>
-                        <c:url value="/jdbc.html" var="jdbc"/>
                         <li>
                             <a href="${jdbc}">JDBC c JDBCTemplates</a>
                         </li>
-                        <c:url value="/email.html" var="email" />
                         <li>
                             <a href="${email}">Работа с Java Mail API</a>
+                        </li>
+                        <li>
+                            <a href="${rest}">Rest Services</a>
+                        </li>
+                        <li>
+                            <a href="${orm}">Spring MVC и Hibernate 5</a>
                         </li>
                     </ul>
                 </li>
@@ -82,7 +91,7 @@
     <footer>
         <div class="row">
             <div class="col-lg-12">
-                <p>Copyright © Vadym 2016</p>
+                <p>Copyright © Javastudy.ru 2016</p>
             </div>
         </div>
     </footer>

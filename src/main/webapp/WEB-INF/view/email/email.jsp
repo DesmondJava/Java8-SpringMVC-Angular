@@ -7,7 +7,7 @@
 <%@ taglib prefix="page" tagdir="/WEB-INF/tags" %>
 
 <page:template>
-    <jsp:attribute name="title">Javastudy.ru MVC_HTML5_Angular</jsp:attribute>
+    <jsp:attribute name="title">MVC_HTML5_Angular</jsp:attribute>
 
     <jsp:body>
         <!-- Page Content -->

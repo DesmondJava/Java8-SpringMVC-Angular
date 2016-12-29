@@ -144,7 +144,7 @@
           <h2 class="page-header">Spring MVC & Bootstrap</h2>
         </div>
         <div class="col-md-6">
-          <p>В учебном шаблоне используется:</p>
+          <p>Стек технологий:</p>
           <ul>
             <li><strong>Bootstrap v3.2.0</strong>
             </li>
@@ -153,7 +153,6 @@
             <li>Spring MVC 4</li>
             <li>AngularJS</li>
           </ul>
-          <p>Смотрите примеры в действии, а код и описание читайте на <a href="http://javastudy.ru">javastudy.ru</a></p>
         </div>
         <div class="col-md-6">
           <img class="img-responsive" src="${pageContext.request.contextPath}/resources/images/springmvc angular.jpg" alt="">

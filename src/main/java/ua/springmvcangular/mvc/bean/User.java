@@ -1,13 +1,33 @@
 package ua.springmvcangular.mvc.bean;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
+import javax.persistence.*;
+import javax.validation.constraints.Size;
+
 /**
  * Created by vshevchen on 28.12.2016.
  */
+@Entity
+@Table(name = "USER")
 public class User {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "IDUSER")
     private int idUser;
+
+    @NotEmpty
+    @Size(min = 5, max = 20)
+    @Column(name = "USERNAME")
     private String username;
+
+    @NotEmpty
+    @Size(min=5, max=20)
+    @Column(name="PASSWORD")
     private String password;
+
+    @Column(name="ENABLED")
     private boolean enabled;
 
     public int getIdUser() {
@@ -40,5 +60,15 @@ public class User {
 
     public void setEnabled(boolean enabled) {
         this.enabled = enabled;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "idUser=" + idUser +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", enabled=" + enabled +
+                '}';
     }
 }

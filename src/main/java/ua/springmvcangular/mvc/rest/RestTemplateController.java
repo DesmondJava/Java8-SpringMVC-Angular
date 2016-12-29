@@ -11,7 +11,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created for JavaStudy.ru on 28.02.2016.
+ * Created for vshevche on 28.02.2016.
  */
 @RestController //will add automatically the @ResponseBody annotation to all methods
 public class RestTemplateController {

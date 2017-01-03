@@ -87,3 +87,4 @@ npm-debug.log
 .vscode
 *.log
 *.stackdump
+!/src/main/webapp/resources/css/bootstrap.css

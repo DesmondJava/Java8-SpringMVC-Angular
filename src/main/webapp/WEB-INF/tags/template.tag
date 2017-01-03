@@ -36,6 +36,7 @@
 <c:url value="/email.html" var="email" />
 <c:url value="/rest.html" var="rest" />
 <c:url value="/orm.html" var="orm" />
+<c:url value="/runtimeException.html" var="runtimeException" />
 
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -73,6 +74,9 @@
                         <li>
                             <a href="${orm}">Spring MVC и Hibernate 5</a>
                         </li>
+                        <li>
+                            <a href="${runtimeException}">Runtime Exception</a>
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -91,7 +95,7 @@
     <footer>
         <div class="row">
             <div class="col-lg-12">
-                <p>Copyright © Vadym 2016</p>
+                <p>Copyright © Javastudy.ru 2016</p>
             </div>
         </div>
     </footer>

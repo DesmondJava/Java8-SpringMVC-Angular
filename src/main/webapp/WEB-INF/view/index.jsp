@@ -99,7 +99,8 @@
 
       <c:url value="/file.html" var="file"/>
       <c:url value="/email.html" var="email"/>
-
+      <c:url value="/orm.html" var="orm" />
+      <c:url value="/runtimeException.html" var="runtimeException" />
       <!-- Portfolio Section -->
       <div class="row">
         <div class="col-lg-12">
@@ -111,7 +112,7 @@
           </a>
         </div>
         <div class="col-md-4 col-sm-6">
-          <a href="portfolio-item.html">
+          <a href="${orm}">
             <img class="img-responsive img-portfolio img-hover" src="${pageContext.request.contextPath}/resources/images/spring hibernate.png" alt="">
           </a>
         </div>
@@ -126,7 +127,7 @@
           </a>
         </div>
         <div class="col-md-4 col-sm-6">
-          <a href="portfolio-item.html">
+          <a href="${runtimeException}">
             <img class="img-responsive img-portfolio img-hover" src="${pageContext.request.contextPath}/resources/images/java-exception-handling.png" alt="">
           </a>
         </div>
@@ -144,7 +145,7 @@
           <h2 class="page-header">Spring MVC & Bootstrap</h2>
         </div>
         <div class="col-md-6">
-          <p>Стек технологий:</p>
+          <p>В учебном шаблоне используется:</p>
           <ul>
             <li><strong>Bootstrap v3.2.0</strong>
             </li>
@@ -153,6 +154,7 @@
             <li>Spring MVC 4</li>
             <li>AngularJS</li>
           </ul>
+          <p>Смотрите примеры в действии, а код и описание читайте на <a href="http://javastudy.ru">javastudy.ru</a></p>
         </div>
         <div class="col-md-6">
           <img class="img-responsive" src="${pageContext.request.contextPath}/resources/images/springmvc angular.jpg" alt="">

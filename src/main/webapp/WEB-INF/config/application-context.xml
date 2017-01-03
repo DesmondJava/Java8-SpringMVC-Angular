@@ -30,7 +30,6 @@
         <jdbc:script location="classpath:test-data.sql"/>
     </jdbc:initialize-database>
 
-
     <!-- Java Mail Configuration -->
     <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
         <property name="username" value="${java.mail.username}"/>
@@ -54,7 +53,6 @@
 
     <!-- REST template configuration -->
     <bean id="restTemplate" class="org.springframework.web.client.RestTemplate"/>
-
 
     <!--Do not forget activate @Transactional JPA annotation with <annotation-driven/>-->
     <!-- JPA Persistence Context and EntityManager configuration -->
@@ -83,5 +81,11 @@
     <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
         <property name="entityManagerFactory" ref="entityManagerFactory" />
     </bean>
+
+    <!--not uses but could autowired in JDBCExample bean-->
+    <!--     <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+          <property name="dataSource" ref="dataSource"></property>
+      </bean>
+       -->
 
 </beans>
